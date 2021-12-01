@@ -2,16 +2,13 @@
 def list_natural_numbers():
     sum = 0
     naturals = list()
-    num = valid_number(0, "Introdueix un nombre natural o cero per sortir")
+    num = valid_number(0, "Introdueix un nombre natural o cero per sortir:")
     while num != 0:
         naturals.append(num)
-        num = valid_number(0, "Introdueix un nombre natural o cero per sortir")
+        num = valid_number(0, "Introdueix un nombre natural o cero per sortir:")
     for x in naturals:
         sum += x
     print(sum)
-
-
-
 
 
 #Ejercicio 2:
@@ -19,6 +16,7 @@ def menu(msg):
     print("//////////////////////////////")
     print(msg)
     print("//////////////////////////////")
+
 
 #Ejercicio 3:
 def h_library():
@@ -44,6 +42,7 @@ def h_library():
         "ISBN:":isbn
     }
     print(diccionario)
+
 
 def valid_number(val, msg):
     num = int(input(msg))
